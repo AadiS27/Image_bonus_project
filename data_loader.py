@@ -7,8 +7,8 @@ def download_datasets(data_dir="data"):
         os.makedirs(data_dir)
         
     images = {
-        'camera': data.camera(), # grayscale
-        'astronaut': cv2.cvtColor(data.astronaut(), cv2.COLOR_RGB2BGR),
+        'brick': data.brick(), # grayscale
+        'chelsea': cv2.cvtColor(data.chelsea(), cv2.COLOR_RGB2BGR), # color cat
     }
     
     downloaded_files = []
